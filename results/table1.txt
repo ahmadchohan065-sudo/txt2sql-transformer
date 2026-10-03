@@ -1,0 +1,3 @@
+train: pairs=56355, src mean/max=42.5/222, tgt mean/max=14.8/65, dropped=19
+dev: pairs=8421, src mean/max=42.5/167, tgt mean/max=14.8/44, dropped=0
+test: pairs=15878, src mean/max=42.7/260, tgt mean/max=14.9/46, dropped=0

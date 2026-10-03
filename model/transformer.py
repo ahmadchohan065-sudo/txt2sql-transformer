@@ -5,13 +5,11 @@ import torch
 import torch.nn as nn
 
 # make the given starter/ folder importable, wherever this file is run from
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "starter"))
-from embeddings import TokenEmbedding, InputLayer          # given by the assignment
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent/"starter"))
+from embeddings import TokenEmbedding, InputLayer        
 
 from model.layers import Encoder, Decoder
 
-
-# ---------------------------------------------------------------- masks (Task 2.4)
 def make_pad_mask(ids, pad_id=0):
     """(B, L) token ids -> (B, 1, 1, L) bool. True where the token is a real token."""
     return (ids != pad_id).unsqueeze(1).unsqueeze(2)
