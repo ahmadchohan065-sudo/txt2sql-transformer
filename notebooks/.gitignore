@@ -1,0 +1,20 @@
+
+# ---- added for Assignment 2 ----
+WikiSQL/data/
+starter/WikiSQL
+starter/*_pairs.jsonl
+starter/spm_corpus.txt
+checkpoints/last.pt
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# ---- added for Assignment 2 ----
+WikiSQL/data/
+starter/WikiSQL
+starter/*_pairs.jsonl
+starter/spm_corpus.txt
+checkpoints/last.pt
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
