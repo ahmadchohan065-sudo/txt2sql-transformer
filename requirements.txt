@@ -4,3 +4,4 @@ babel
 tabulate
 sentencepiece
 torch 
+huggingface_hub
