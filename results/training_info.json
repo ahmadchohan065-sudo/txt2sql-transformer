@@ -1,0 +1,8 @@
+{
+  "epochs_trained": 20,
+  "best_epoch": 18,
+  "best_dev_loss": 1.4459493619281403,
+  "training_time_min": 21.8360555489858,
+  "trainable_parameters": 7577600,
+  "device": "Tesla T4"
+}

@@ -1,5 +1,5 @@
-[1] Causal mask   : earlier outputs unchanged = True | last output changed = True
-[2] Padding mask  : output unchanged after adding <pad> to the source = True
-[3] Attention rows: every row sums to 1 = True | hidden positions get weight 0 = True
-    (real model)  : cross-attn rows sum to 1 = True | weight on the 6 padded source slots = 0.0e+00
-[4] Weight sharing: output projection weight IS the embedding weight (is-check) = True
+[1] causal mask: earlier outputs unchanged = True | last output changed = True
+[2] padding mask: output unchanged after adding <pad> = True
+[3] attention rows: rows sum to 1 = True | masked positions have zero weight = True
+real model: cross-attention rows sum to 1 = True | padded source weight = 0.0e+00
+[4] weight sharing: output projection and embeddings use the same tensor = True
