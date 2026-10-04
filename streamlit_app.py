@@ -1,9 +1,11 @@
-
 import re, sys
 from pathlib import Path
 import streamlit as st
 import sentencepiece as spm
 import torch
+from huggingface_hub import hf_hub_download
+
+HF_REPO = "ahmadcoder123/text-to-sql-model"   # <-- CHANGE THIS
 
 ROOT = Path(__file__).parent
 sys.path.insert(0, str(ROOT))
@@ -19,7 +21,8 @@ MAX_SRC_TOKENS = 160
 @st.cache_resource
 def load_everything():
     sp = spm.SentencePieceProcessor(model_file=str(ROOT / "starter" / "sql_sp.model"))
-    model, _ = load_model(str(ROOT / "deploy_ckpt" / "best.pt"), "cpu")
+    ckpt = hf_hub_download(repo_id=HF_REPO, filename="best.pt")
+    model, _ = load_model(ckpt, "cpu")
     return sp, model
 
 
