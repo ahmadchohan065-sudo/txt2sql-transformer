@@ -1,12 +1,12 @@
 # Text-to-SQL with a Transformer built from scratch
 
-Generative AI - Assignment 02 (Fall 2026). **Group:** MEMBER_1 and MEMBER_2.
+
 An English question + the column names of a table go in; a SQL query comes out.
 The full encoder-decoder Transformer (Vaswani et al., 2017) is implemented from basic PyTorch layers,
 trained once from random initialisation on WikiSQL, and served through a small web app.
 
-* Blog: BLOG_LINK
-* LinkedIn: LINKEDIN_LINK
+* Blog: 
+* LinkedIn: 
 
 ![front end](results/fig5_frontend.png)
 
