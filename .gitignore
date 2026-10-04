@@ -10,7 +10,6 @@ __pycache__/
 *.pyc
 
 # Model checkpoints (large)
-*.pt
 *.pth
 
 # Notebook / editor junk
