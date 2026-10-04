@@ -1,0 +1,4 @@
+generated text: select count <c5> where <c1> = 3
+
+ <c5> attends most to source token '<c5>' (weight 0.25) -> MATCH (inside the right column)
+ <c1> attends most to source token '▁number' (weight 0.28) -> no match

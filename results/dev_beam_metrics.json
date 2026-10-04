@@ -1,0 +1,10 @@
+{
+  "split": "dev",
+  "method": "beam",
+  "n": 8421,
+  "parse_failures": 0,
+  "parse_failure_pct": 0.0,
+  "sel_acc": 93.48058425365159,
+  "agg_acc": 89.75181094881843,
+  "where_acc": 75.37109606935043
+}
